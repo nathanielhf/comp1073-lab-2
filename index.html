@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+    <!-- Third-Party CDNs -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Lab 02 - Colour Picker</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="mt-5">
+        <h1>Lab 02 - Colour Picker</h1>
+      </header>
+
+      <hr class="my-5">
+
+      <div class="row">
+        <div class="col-4 form-row form-group">
+          <label>Red:</label>
+          <input id="redSlider" class="col-sm-8 form-control-range" type="range" name="red" min="0" max="255" step="1" value="0">
+          <input id="redInput" class="col" type="number" min="0" max="255" step="1" value="0">
+        </div>
+
+        <div class="col-4 form-row form-group">
+          <label>Green:</label>
+          <input id="greenSlider" class="col-sm-8 form-control-range" type="range" name="green" min="0" max="255" step="1" value="0">
+          <input id="greenInput" class="col" type="number" min="0" max="255" step="1" value="0">
+        </div>
+
+        <div class="col-4 form-row form-group">
+          <label>Blue:</label>
+          <input id="blueSlider" class="col-sm-8 form-control-range" type="range" name="blue" min="0" max="255" step="1" value="0">
+          <input id="blueInput" class="col" type="number" min="0" max="255" step="1" value="0">
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-6" id="colourPreview">
+          <table>
+            <tr>
+              <th>RGB:</th>
+              <td id="rgb">rgb(0,0,0)</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="col-6" id="message"></div>
+      </div>
+
+      <div class="row" id="chosenColours">
+        <div class="chosenColour"></div>
+        <div class="chosenColour"></div>
+        <div class="chosenColour"></div>
+        <div class="chosenColour"></div>
+        <div class="chosenColour"></div>
+      </div>
+    </div>
+    
+    <!-- Third-Party CDNs -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+  </body>
+  
+</html>
